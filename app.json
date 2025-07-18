@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "ebook-app-mobile",
+    "slug": "ebook-app-mobile",
+    "owner": "myunusseker",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "ebookappmobile",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.ebookappmobile",
+      "runtimeVersion": "1.0.0"
+    },
+    "ios": {
+      "bundleIdentifier": "com.yourname.ebookappmobile",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      },
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "5cd4955e-9b59-4223-9240-7ce1ac7b8ffa"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/5cd4955e-9b59-4223-9240-7ce1ac7b8ffa"
+    }
+  }
+}
